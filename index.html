@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Weather App</title>
+
+    <style>
+      body {
+        background: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+      }
+
+      input {
+        border: 0;
+        outline: 0;
+        background: #555;
+        color: #fff;
+        padding: 10px 25px;
+        height: 40px;
+        border-radius: 30px;
+        font-size: 16px;
+      }
+
+      button {
+        border: 0;
+        outline: 0;
+        background: #555;
+        color: #fff;
+        width: 80px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 30px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false" />
+        <button>Search</button>
+      </div>
+      <div class="weather">
+        <h1 class="temp">--°c</h1>
+        <h2 class="city">City Name</h2>
+        <p class="description">Weather description</p>
+        <div class="details">
+          <p>Humidity: <span class="humidity">--%</span></p>
+          <p>Wind: <span class="wind">-- km/h</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
